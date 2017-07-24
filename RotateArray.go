@@ -9,6 +9,7 @@ func main() {
 	steps:=3
 	rotateArray(input,steps)
 	rotateArray([]int{},steps)
+	fmt.Println("Resultant array:",input)
 }
 
 func rotateArray(input []int,steps int){
@@ -18,7 +19,6 @@ func rotateArray(input []int,steps int){
 	rotate(input,0, len(input)-1)
 	rotate(input,0, steps-1)
 	rotate(input, steps ,  len(input)-1)
-	fmt.Println(input)
 }
 
 func rotate(input []int, start int, end int){
