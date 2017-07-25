@@ -1,5 +1,5 @@
 # go
-All test examples are in test.go
+All test examples are in go/problems_examples.go
 
 ## Rotate Array
 -Rotate an array of size N by given steps
