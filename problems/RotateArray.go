@@ -1,18 +1,10 @@
-package main
+package problems
 
-import "fmt"
 /**
   Rotate an array of size N by given steps
 */
-func main() {
-	input :=[]int{1,2,3,4,5}
-	steps:=3
-	rotateArray(input,steps)
-	rotateArray([]int{},steps)
-	fmt.Println("Resultant array:",input)
-}
 
-func rotateArray(input []int,steps int){
+func RotateArray(input []int,steps int){
 	if len(input) <=0 {
 		return
 	}

@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package problems
 
 /**
  Find the index of an element in a rotated sorted array
@@ -10,22 +8,8 @@ import "fmt"
  Expected time complexity - O(logN)
  Expected space complexity - O(1)
  */
-func main(){
-    input:=  []int{3,4,5,1,2}
-	key:= 5
-	index := search(input,key)
-	fmt.Println("Found at: ",index)
 
-	key = 1
-	index = search(input,key)
-	fmt.Println("Found at: ",index)
-
-	key = 6
-	index = search(input,key)
-	fmt.Println("Found at:",index)
-}
-
-func search(input []int, key int) (index int){
+func Search(input []int, key int) (index int){
 	if len(input) <= 0{
 		index = -1
 		return
